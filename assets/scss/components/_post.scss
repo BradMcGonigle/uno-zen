@@ -3,6 +3,10 @@
   margin: 5rem 0;
   list-style-type: none;
 
+  .post {
+      
+  }
+
   > li {
     margin-left: 1rem;
     margin-bottom: 1.25rem;
@@ -46,7 +50,7 @@
   }
 
   > header {
-    text-align: center;
+    text-align: left;
   }
 
   &.description {

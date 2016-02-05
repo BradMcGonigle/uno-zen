@@ -2,16 +2,18 @@
 
 <h1 style="text-align: center;" id="posts-headline">Writings.</h1>
 
-{{#foreach posts}}
-    <article class="{{post_class}}">
-      <header>
-          <h1 id="post-title">{{{title}}}</h1>
-      </header>
+<div id="post-list">
+    {{#foreach posts}}
+        <article class="{{post_class}}">
+          <header>
+              <h1 id="post-title"><a href="{{url}}" title="link to {{{title}}}">{{{title}}}</a></h1>
+          </header>
 
-      <div id="post-content" class="{{post_class}}">
-        {{content}}
-      </div>
-    </article>
-{{/foreach}}
+          <div id="post-content" class="{{post_class}}">
+            {{content}}
+          </div>
+        </article>
+    {{/foreach}}
+</div>
 
 {{pagination}}
